@@ -1,0 +1,352 @@
+:root {
+    --color-primario: #2d4f81;
+    --color-acento: #29a8df;
+    --color-fondo: #f2f2f2;
+    --color-texto: #1d304a;
+}
+
+h1 {
+    color: var(--color-primario);
+}
+
+.paginacion-btn {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #d5e2ef;
+    border-radius: 0.5rem;
+    color: var(--color-primario);
+    background-color: #ffffff;
+}
+
+.paginacion-btn:hover:not(:disabled) {
+    background-color: var(--color-fondo);
+    border-color: var(--color-primario);
+    color: var(--color-primario);
+}
+
+.paginacion-btn:disabled {
+    opacity: 0.35;
+}
+
+.paginacion-btn:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 2px;
+}
+
+.paginacion-texto {
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.navbar-sedes {
+    background-color: var(--color-fondo);
+    border-bottom: 1px solid #e5edf4;
+    padding-block: 0.85rem;
+}
+
+.navbar-sedes .navbar-brand,
+.navbar-sedes .navbar-brand:hover {
+    color: var(--color-primario);
+    font-size: 1.2rem;
+}
+
+.navbar-sedes .nav-link {
+    color: var(--color-texto);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-sedes .nav-link:hover,
+.navbar-sedes .nav-link.active {
+    color: var(--color-fondo);
+    background-color: var(--color-primario);
+}
+
+.navbar-sedes .nav-link:focus-visible,
+.navbar-sedes .navbar-brand:focus-visible,
+.navbar-sedes .navbar-toggler:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--color-primario);
+    --bs-btn-border-color: var(--color-primario);
+    --bs-btn-hover-bg: #223e66;
+    --bs-btn-hover-border-color: #223e66;
+    --bs-btn-active-bg: #1d3557;
+    --bs-btn-active-border-color: #1d3557;
+    --bs-btn-disabled-bg: var(--color-primario);
+    --bs-btn-disabled-border-color: var(--color-primario);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: #223e66;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 0.2rem rgba(41, 168, 223, 0.2);
+}
+
+.footer-sedes {
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+
+.footer-sedes .footer-marca {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-sedes .footer-marca:hover {
+    color: #ffffff;
+}
+
+.footer-sedes .footer-descripcion {
+    color: #e0eaf4;
+    max-width: 350px;
+    line-height: 1.7;
+}
+
+.footer-sedes ul a {
+    color: #e0eaf4;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-sedes ul a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-sedes a:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 4px;
+}
+
+.footer-inferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e0eaf4;
+    font-size: 0.875rem;
+}
+
+.sede-card {
+    border: 1px solid #e5edf4;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sede-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(29, 48, 74, 0.12);
+}
+
+.sede-imagen {
+    height: 190px;
+    object-fit: cover;
+}
+
+.sede-card .card-title {
+    color: var(--color-texto);
+}
+
+.sede-pais {
+    color: var(--color-primario);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.sede-tipo {
+    display: inline-block;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.filtro-sedes {
+    border: 1px solid #d5e2ef;
+    border-radius: 0.75rem;
+    padding: 0.8rem 1rem;
+    background-color: #ffffff;
+}
+
+.filtro-sedes:hover {
+    border-color: var(--color-primario);
+}
+
+
+.detalle-sede-imagen {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.detalle-sede-card {
+    border: 1px solid #e5edf4;
+    border-radius: 0.875rem;
+}
+
+.detalle-sede-card .card-body {
+    padding: 1.5rem;
+}
+
+.detalle-sede-card dt {
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.detalle-sede-card dd {
+    color: #667587;
+    font-size: 0.875rem;
+    margin-bottom: 0.9rem;
+}
+
+.detalle-sede-reporte {
+    background-color: var(--color-fondo);
+    border: 1px solid #dceaf4;
+    border-radius: 0.875rem;
+    padding: 1.25rem;
+}
+
+.home-hero {
+    min-height: 600px;
+    background-color: #03172e;
+    background-image: url("./assets/hero-sedes.webp");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.home-hero-contenido {
+    max-width: 490px;
+}
+
+.home-hero .btn-info {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: #071c33;
+}
+
+.home-hero .btn-info:hover {
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
+
+.home-icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 1rem;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    font-size: 2rem;
+}
+
+.home-colaborar {
+    background-color: var(--color-fondo);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+}
+
+.home-colaborar-icono {
+    color: var(--color-primario);
+    font-size: 4rem;
+}
+
+
+.auth-pagina {
+    background-color: var(--color-texto);
+    min-height: 100%;
+}
+
+.auth-card {
+    max-width: 450px;
+    padding: 2.5rem;
+    border: 2px solid var(--color-acento);
+    border-radius: 1.25rem;
+}
+
+.auth-card-registro {
+    max-width: 500px;
+}
+
+.auth-logo {
+    width: 80px;
+    height: auto;
+}
+
+.auth-card h1 {
+    color: var(--color-texto);
+}
+
+.auth-card .form-control {
+    border-color: #d5e2ef;
+    border-radius: 0.65rem;
+    padding: 0.7rem 0.9rem;
+}
+
+.auth-card .btn-primary {
+    padding: 0.7rem 1rem;
+    border-radius: 0.65rem;
+}
+
+.card-reporte{
+    max-width: 600px;
+}
+
+.card-reporte h1{
+    color: var(--color-primario);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-sedes .navbar-nav {
+        padding-top: 1rem;
+    }
+
+    .navbar-sedes .nav-link {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-hero {
+        min-height: 480px;
+        background-image: linear-gradient(
+            rgba(3, 23, 46, 0.85),
+            rgba(3, 23, 46, 0.85)
+        ), url("./assets/hero-sedes.webp");
+        background-position: 60% center;
+    }
+
+    .home-hero-contenido {
+        max-width: 100%;
+    }
+
+    .home-colaborar {
+        padding: 1.75rem;
+        text-align: center;
+    }
+
+    .auth-card {
+        padding: 1.75rem;
+    }
+}
